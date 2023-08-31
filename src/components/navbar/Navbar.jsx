@@ -11,6 +11,7 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { DarkModeContext } from "../../context/darkModeContext";
 import { AuthContext } from "../../context/authContext";
+import { green } from "@mui/material/colors";
 //import profilePic from "../../assets/whiteman.jpg"
 
 const Navbar = () => {
@@ -21,7 +22,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="left">
         <Link to="/" style={{ textDecoration: "none" }}>
-          <span>Balloon App</span>
+          <span style={{ color: "whiteSmoke",fontSize:28}} >Locale App</span>
         </Link>
         <HomeOutlinedIcon />
         {darkMode ? (
@@ -39,7 +40,8 @@ const Navbar = () => {
         <PersonOutlinedIcon />
         <EmailOutlinedIcon />
         <NotificationsOutlinedIcon />
-       {/* <div className="user">
+       
+           {/* <div className="user">
         <img
             src={currentUser.profilePic}
             alt=""
